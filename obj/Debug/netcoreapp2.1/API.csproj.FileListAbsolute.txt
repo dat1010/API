@@ -1,0 +1,14 @@
+/home/davidtanner/Documents/dotnet/API/bin/Debug/netcoreapp2.1/API.deps.json
+/home/davidtanner/Documents/dotnet/API/bin/Debug/netcoreapp2.1/API.runtimeconfig.json
+/home/davidtanner/Documents/dotnet/API/bin/Debug/netcoreapp2.1/API.runtimeconfig.dev.json
+/home/davidtanner/Documents/dotnet/API/bin/Debug/netcoreapp2.1/API.dll
+/home/davidtanner/Documents/dotnet/API/bin/Debug/netcoreapp2.1/API.pdb
+/home/davidtanner/Documents/dotnet/API/obj/Debug/netcoreapp2.1/API.csprojAssemblyReference.cache
+/home/davidtanner/Documents/dotnet/API/obj/Debug/netcoreapp2.1/API.csproj.CoreCompileInputs.cache
+/home/davidtanner/Documents/dotnet/API/obj/Debug/netcoreapp2.1/API.RazorAssemblyInfo.cache
+/home/davidtanner/Documents/dotnet/API/obj/Debug/netcoreapp2.1/API.RazorAssemblyInfo.cs
+/home/davidtanner/Documents/dotnet/API/obj/Debug/netcoreapp2.1/API.AssemblyInfoInputs.cache
+/home/davidtanner/Documents/dotnet/API/obj/Debug/netcoreapp2.1/API.AssemblyInfo.cs
+/home/davidtanner/Documents/dotnet/API/obj/Debug/netcoreapp2.1/API.RazorTargetAssemblyInfo.cache
+/home/davidtanner/Documents/dotnet/API/obj/Debug/netcoreapp2.1/API.dll
+/home/davidtanner/Documents/dotnet/API/obj/Debug/netcoreapp2.1/API.pdb
