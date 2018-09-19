@@ -46,9 +46,11 @@ namespace Controllers.UsersController
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> CreateUser([FromBody] CreateUserResource user) 
+		public async Task<IActionResult> CreateUser([FromBody] Users user) 
 		{
-			return null;
+			_context.Users.Add(user);
+			await _context.SaveChangesAsync();
+			return Ok(user);
 		}
 	}					
 }
