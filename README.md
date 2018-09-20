@@ -9,5 +9,5 @@ There will be some research needed while working on this project because not all
  like timex, I believe I can use nodatime in dotnet though, and imagemagic but I don't think I'll need that software for this phase of the project.
  
  
-To keep an eye on my progress you can watch the commits on this branch or track my status on trello(https://trello.com/b/aZEy1inO/tradehands-conversion-to-net). In trello I have the tasks to begin my conversion.
+To keep an eye on my progress you can watch the commits on this branch or track my status on trello(https://trello.com/b/aZEy1inO). In trello I have the tasks to begin my conversion.
 
