@@ -1,5 +1,5 @@
 # API
-This is my ADK coding exercise to convert the login and feed controllers to .NET spesifically the verification_controller and the feed_controller from tradehounds_api. **One assumption I'm making is that it's OK to use a new database.**
+This is my ADK coding exercise to convert the login and feed controllers to .NET specifically the verification_controller and the feed_controller from tradehounds_api. **One assumption I'm making is that it's OK to use a new database.**
 
 
 **My Time estimate for this is 3-4 hours** 
