@@ -13,7 +13,6 @@ To keep an eye on my progress you can watch the commits on this branch or track 
 
 **End Points**
 ## /api/v1/users/:id/verifications
-### <a id=api-v1-users-id-verifications-create></a>create
 #### POST /api/v1/users/:id/verifications
 ##### Request
 * __Method:__ POST
@@ -21,7 +20,6 @@ To keep an eye on my progress you can watch the commits on this branch or track 
 * __Request headers:__
 ```
 accept: application/json
-content-type: multipart/mixed; boundary=plug_conn_test
 ```
 * __Request body:__
 ```json
@@ -37,8 +35,7 @@ content-type: multipart/mixed; boundary=plug_conn_test
 * __Status__: 201
 * __Response headers:__
 ```
-content-type: application/json; charset=utf-8
-cache-control: max-age=0, private, must-revalidate
+content-type: application/json
 ```
 * __Response body:__
 ```json
