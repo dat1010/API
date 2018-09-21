@@ -2,6 +2,7 @@ namespace API.Models
 {
 	public class Photo
 	{
+		public int id {get; set;}
 		public float latitude {get; set;}
 		public float longitude {get; set;}
 		public string location {get; set;}
