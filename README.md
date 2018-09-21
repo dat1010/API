@@ -48,7 +48,6 @@ content-type: application/json
 }
 ```
 ## /api/v1/users/:id/feeds
-### <a id=api-v1-users-id-feeds-index></a>index
 #### GET /api/v1/users/:id/feeds
 ##### Request
 * __Method:__ GET
