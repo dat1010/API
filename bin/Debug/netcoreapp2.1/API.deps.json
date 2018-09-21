@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "6edd0b0bb594a81891b568a8ff7ac15da0bce8e6"
+    "signature": "31b4eeeb164e3a292f4bd60e8e62eaf4a3c497cd"
   },
   "compilationOptions": {
     "defines": [
@@ -26,6 +26,7 @@
         "dependencies": {
           "AutoMapper": "7.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "5.0.1",
+          "BCrypt.Net-Core": "1.5.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.EntityFrameworkCore.Design": "2.1.1",
           "Microsoft.EntityFrameworkCore.Tools": "2.1.1",
@@ -66,6 +67,20 @@
         },
         "compile": {
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
+      "BCrypt.Net-Core/1.5.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/BCrypt.Net-Core.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/BCrypt.Net-Core.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.1.0": {
@@ -3229,6 +3244,13 @@
       "sha512": "sha512-7MIq6D/ax3964iHXbL1L2ldUvl6IlKp0p1GZFzr6vlIhEVyp4CgJwOpisRLvIO7dP+kDtbY3Hb9yuPNCkfyBFg==",
       "path": "automapper.extensions.microsoft.dependencyinjection/5.0.1",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.5.0.1.nupkg.sha512"
+    },
+    "BCrypt.Net-Core/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qDKpCBcopQn/Ia1pTAqm/rEgy8PM057JFFNtslkOZQnBWGPbY4vxWouWGqUbUlJdxe6nwITta3jtkxlz/JVJzQ==",
+      "path": "bcrypt.net-core/1.5.0",
+      "hashPath": "bcrypt.net-core.1.5.0.nupkg.sha512"
     },
     "Microsoft.NETCore.App/2.1.0": {
       "type": "package",

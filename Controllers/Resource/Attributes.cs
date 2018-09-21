@@ -1,7 +1,9 @@
 namespace API.Controllers.Resource
 {
-	public class Attributes
+	public class Attribute
 	{
 		public string Pin {get; set;}
+		public int user_id {get; set;}
+		public string jwt {get; set;}
 	}
 }

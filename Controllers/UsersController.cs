@@ -1,3 +1,4 @@
+using TradehoundsApi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using API.Models;
 using AutoMapper;
 using API.Persistence;
 using API.Controllers.Resource;
+using BCrypt;
 
 namespace Controllers.UsersController
 {	
@@ -37,12 +39,37 @@ namespace Controllers.UsersController
 			return userResource;
 		}
 
-		[HttpPost]
-		public async Task<IActionResult> CreateUser([FromBody] User user) 
-		{
-			_context.Users.Add(user);
-			await _context.SaveChangesAsync();
-			return Ok(user);
+		[HttpPost("{id}/verifications")]
+		public async Task<IActionResult> CreateUser([FromBody] VerificationResource verification, int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            bool pinVerified = NewMethod(verification, user);
+
+            if (!pinVerified)
+            {
+                //TODO return 401
+                return null;
+            }
+            else
+            {
+                return Ok(CreateWithValidPin(user));
+            }
+        }
+
+	
+        private static bool NewMethod(VerificationResource verification, User user) => BCrypt.Net.BCrypt.Verify(verification.attributes.Pin, user.hashed_verification_pin);
+
+        public VerificationResource CreateWithValidPin(User user)
+		{	
+			var vr = new VerificationResource();
+			var account = new Accounts(_context);
+			account.UpdateUserStatus(user, "authenticated");
+			vr.Type = "verifications";
+			vr.attributes = new API.Controllers.Resource.Attribute();
+			vr.attributes.user_id = user.Id;
+			vr.attributes.jwt = "fake_jwt";
+			return vr;
 		}
+		
 	}					
 }
