@@ -10,3 +10,51 @@ There will be some research needed while working on this project because not all
  
  
 To keep an eye on my progress you can watch the commits on this branch or track my status on trello(https://trello.com/b/aZEy1inO). In trello I have the tasks to begin my conversion.
+
+**End Points**
+## /api/v1/users/:id/verifications
+### <a id=api-v1-users-id-verifications-create></a>create
+#### POST /api/v1/users/:id/verifications
+##### Request
+* __Method:__ POST
+* __Path:__ /api/v1/users/1/verifications
+* __Request headers:__
+```
+accept: application/json
+content-type: multipart/mixed; boundary=plug_conn_test
+```
+* __Request body:__
+```json
+{
+    "type": "verifications",
+    "attributes": {
+      "pin": "1234"
+    }
+}
+```
+
+##### Response
+* __Status__: 201
+* __Response headers:__
+```
+content-type: application/json; charset=utf-8
+cache-control: max-age=0, private, must-revalidate
+```
+* __Response body:__
+```json
+{
+  "type": "verifications",
+  "attributes": {
+    "user_id": 1,
+    "jwt": "fake_jwt"
+  }
+}
+```
+## /api/v1/users/:id/feeds
+### <a id=api-v1-users-id-feeds-index></a>index
+#### GET /api/v1/users/:id/feeds
+##### Request
+* __Method:__ GET
+* __Path:__ /api/v1/users/7967/feeds
+
+
