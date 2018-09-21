@@ -25,7 +25,7 @@ namespace Controllers.FeedController
 		[HttpGet("{id}/feeds")]
 		public  IQueryable<Post> Get(int id)
 		{
-			var posts =  _context.Posts.Where(p => p.user_id == id);
+			var posts =  _context.Posts.OrderByDescending(p => p.inserted_at);
 			return posts;
 		}
 	}
