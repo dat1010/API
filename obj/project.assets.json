@@ -27,6 +27,18 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "BCrypt.Net-Core/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/BCrypt.Net-Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/BCrypt.Net-Core.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4416,6 +4428,21 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
+      ]
+    },
+    "BCrypt.Net-Core/1.5.0": {
+      "sha512": "qDKpCBcopQn/Ia1pTAqm/rEgy8PM057JFFNtslkOZQnBWGPbY4vxWouWGqUbUlJdxe6nwITta3jtkxlz/JVJzQ==",
+      "type": "package",
+      "path": "bcrypt.net-core/1.5.0",
+      "files": [
+        ".signature.p7s",
+        "bcrypt.net-core.1.5.0.nupkg.sha512",
+        "bcrypt.net-core.nuspec",
+        "lib/net40/BCrypt.Net-Core.dll",
+        "lib/net45/BCrypt.Net-Core.dll",
+        "lib/net451/BCrypt.Net-Core.dll",
+        "lib/net452/BCrypt.Net-Core.dll",
+        "lib/netstandard1.3/BCrypt.Net-Core.dll"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -11635,6 +11662,7 @@
     ".NETCoreApp,Version=v2.1": [
       "AutoMapper >= 7.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 5.0.1",
+      "BCrypt.Net-Core >= 1.5.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.EntityFrameworkCore.Design >= 2.1.1",
       "Microsoft.EntityFrameworkCore.Tools >= 2.1.1",
@@ -11688,6 +11716,10 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[5.0.1, )"
+          },
+          "BCrypt.Net-Core": {
+            "target": "Package",
+            "version": "[1.5.0, )"
           },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",

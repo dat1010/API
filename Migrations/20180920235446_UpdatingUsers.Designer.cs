@@ -2,15 +2,17 @@
 using API.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace API.Migrations
 {
     [DbContext(typeof(ApiContext))]
-    partial class ApiContextModelSnapshot : ModelSnapshot
+    [Migration("20180920235446_UpdatingUsers")]
+    partial class UpdatingUsers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -27,9 +29,9 @@ namespace API.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<string>("birth_year");
+                    b.Property<string>("Password");
 
-                    b.Property<string>("hashed_verification_pin");
+                    b.Property<string>("birth_year");
 
                     b.Property<string>("location");
 
@@ -40,8 +42,6 @@ namespace API.Migrations
                     b.Property<string>("role");
 
                     b.Property<string>("status");
-
-                    b.Property<int>("verification_pin_timeout");
 
                     b.HasKey("Id");
 

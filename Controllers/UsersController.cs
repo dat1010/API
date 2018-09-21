@@ -10,7 +10,7 @@ using API.Controllers.Resource;
 
 namespace Controllers.UsersController
 {	
-	[Route("api/users")]
+	[Route("api/v1/users")]
 	[ApiController]
 	public class UsersController : ControllerBase
 	{
@@ -28,16 +28,8 @@ namespace Controllers.UsersController
 			return new User();
 		}
 
-/*   [HttpPost]
-    0     public async Task<IActionResult> CreatePost([FromBody] Models.Post post)
-    1     {
-    2       context.Posts.Add(post);
-    3       await context.SaveChangesAsync();
-    4       return Ok(post);
-    5     }
-*/
 
-		[HttpGet("{id}")]
+		[HttpGet("{id}/verifications")]
 		public async Task<UserResource> Get(int id)
 		{
 			var user = await _context.Users.FindAsync(id);
@@ -46,7 +38,7 @@ namespace Controllers.UsersController
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> CreateUser([FromBody] Users user) 
+		public async Task<IActionResult> CreateUser([FromBody] User user) 
 		{
 			_context.Users.Add(user);
 			await _context.SaveChangesAsync();
